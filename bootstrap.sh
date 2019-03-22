@@ -125,16 +125,16 @@ download_prerequisites()
       https://www.bastoul.net/cloog/pages/download/cloog-${cloog_version}.tar.gz
   test -f archives/binutils-${binutils_version}.tar.bz2 || \
       curl -o archives/binutils-${binutils_version}.tar.bz2 \
-      http://ftp.gnu.org/gnu/binutils/binutils-${binutils_version}.tar.bz2
+      https://mirrors.tuna.tsinghua.edu.cn/gnu/binutils/binutils-${binutils_version}.tar.bz2
   test -f archives/musl-riscv-${musl_version}.tar.gz || \
       curl -o archives/musl-riscv-${musl_version}.tar.gz \
       https://codeload.github.com/rv8-io/musl-riscv/tar.gz/${musl_version}
   test -f archives/linux-${linux_version}.tar.xz || \
       curl -L -o archives/linux-${linux_version}.tar.xz \
-      https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-${linux_version}.tar.xz
+      https://mirrors.tuna.tsinghua.edu.cn/kernel/v4.x/linux-${linux_version}.tar.xz
   test -f archives/gcc-${gcc_version}.tar.xz || \
       curl -o archives/gcc-${gcc_version}.tar.xz \
-      http://ftp.gnu.org/gnu/gcc/gcc-${gcc_version}/gcc-${gcc_version}.tar.xz
+      https://mirrors.tuna.tsinghua.edu.cn/gnu/gcc/gcc-${gcc_version}/gcc-${gcc_version}.tar.xz
 }
 
 extract_archives()
